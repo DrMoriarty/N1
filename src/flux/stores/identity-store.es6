@@ -80,12 +80,14 @@ class IdentityStore extends NylasStore {
   }
 
   subscriptionState() {
+    /*
     if (!this._identity || (this._identity.valid_until === null)) {
       return State.Trialing;
     }
     if (new Date(this._identity.valid_until * 1000) < new Date()) {
       return State.Lapsed;
     }
+    */
     return State.Valid;
   }
 
